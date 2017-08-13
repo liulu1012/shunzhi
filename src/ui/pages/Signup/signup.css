@@ -14,7 +14,6 @@
   border: 2px solid blue;
 }
 
-
 /*  Hero 部分 */
 .signup-hero {
   height: 140px;
@@ -36,18 +35,62 @@
 }
 
 
-/* Actions 部分 */
-.signup-actions {
-  height: 140px;
-}
-.signup-form-wrap {
-  flex-grow: 1;
+/* form input 部分 */
+
+.signup-form {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.signup-text-inputs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   justify-content: space-around;
 }
 
-.signup-form {
-  height: 80px;
-  background-color: #fff;
+.signup-form input {
+  line-height: 56px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #E3E9EC;
+  text-indent: 20px;
+  color: #878787;
+}
+
+.signup-form input::placeholder {
+  color: #CECECE;
+}
+
+.signup-text-inputs-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-other-option {
+  margin-bottom: 35px;
+  margin-top: 15px;
+  text-align: center;
+}
+.signup-other-option a {
+  color: white;
+  line-height: 20px;
+}
+
+.signup-actions button {
+  display: block;
+  border: 0;
+  line-height: 56px;
+  outline: 0;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #F77062;
 }

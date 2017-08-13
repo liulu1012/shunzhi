@@ -9,7 +9,12 @@ class Signup extends Component {
         <TitleHeader title='signup' />
         <div className='signup-content'>
           <div className='signup-hero'>
-            hero
+            <h1 className='title'>
+              注册
+            </h1>
+            <p className='slogan'>
+              连接小而确定的幸福
+            </p>
           </div>
           <div className='signup-form-wrap'>
             <form className='signup-form'>

@@ -14,10 +14,29 @@
   border: 2px solid blue;
 }
 
+
+/*  Hero 部分 */
 .signup-hero {
   height: 140px;
 }
 
+.signup-hero .title {
+  font-size: 36px;
+  color: #FFFFFF;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 54px;
+}
+
+.signup-hero .slogan {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+/* Actions 部分 */
 .signup-actions {
   height: 140px;
 }

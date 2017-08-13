@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './ui/pages/Home/Home'
 import Signup from './ui/pages/Signup/Signup'
 import Sidebar from './ui/shared/Sidebar/Sidebar'
+import Dashboard from './ui/pages/Dashboard/Dashboard'
 import './main.css'
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ class App extends React.Component{
             <Switch>
               <Route exact path='/' component={ Home } />
               <Route path='/signup' component={ Signup } />
+              <Route path='/dashboard' component={ Dashboard } />
             </Switch>
           </div>
         </Router>

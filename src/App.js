@@ -15,7 +15,10 @@ class App extends React.Component{
       <div>
         <Router>
           <div>
-            <Sidebar />
+              <Route render={({ location }) => {
+                return location.pathname !== '/' ?
+                (<Sidebar />) : null
+              }} />
             <Switch>
               <Route exact path='/' component={ Home } />
               <Route path='/signup' component={ Signup } />

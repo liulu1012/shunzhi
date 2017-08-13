@@ -5,14 +5,10 @@
 }
 .signup-content {
   display: flex;
-  border: 2px solid yellow;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.signup-content>* {
-  border: 2px solid blue;
-}
 
 /*  Hero 部分 */
 .signup-hero {

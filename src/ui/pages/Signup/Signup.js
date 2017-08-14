@@ -11,13 +11,19 @@ class Signup extends Component {
 
   signup = (e) => {
     e.preventDefault()
+    let username = this.usernameInput.value
+    let password = this.passwordInput.value
     let data = {
-      username: 'xxx',
-      password: '222'
+      username,
+      password
     }
-    axios.post(`${Settings.host}/user/signup`, data).then( res => {
-      console.log(res.data)
-    })
+    axios.post(`${Settings.host}/user/signup`, data)
+      .then( res => {
+        console.log(res.data)
+      })
+      .catch(err => {
+        console.log(err.response.data.msg)
+      })
   }
 
   render() {
@@ -36,9 +42,9 @@ class Signup extends Component {
           <form onSubmit={this.signup} className="signup-form">
             <div className="signup-text-inputs">
               <div className="signup-text-inputs-inner">
-                <input type="text" placeholder="用户名" />
+                <input type="text" placeholder="用户名" ref={value => this.usernameInput = value}/>
                 <input type="text" placeholder="Email" />
-                <input type="password" placeholder="password" />
+                <input type="password" placeholder="password" ref={value => this.passwordInput = value}/>
                 <input type="password" placeholder="再输一遍" />
               </div>
             </div>

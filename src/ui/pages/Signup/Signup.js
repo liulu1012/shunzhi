@@ -20,6 +20,7 @@ class Signup extends Component {
     axios.post(`${Settings.host}/user/signup`, data)
       .then( res => {
         console.log(res.data)
+        this.props.history.push('/dashboard')
       })
       .catch(err => {
         console.log(err.response.data.msg)

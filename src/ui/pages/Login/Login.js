@@ -17,7 +17,10 @@ class Login extends Component {
       password
     }
     axios.post(`${Settings.host}/user/login`, data)
-      .then(res => console.log(res.data))
+      .then(res => {
+        console.log(res.data)
+        this.props.history.push('/dashboard')
+      })
       .catch(err => console.log(err.response.data.msg))
   }
   render(){
